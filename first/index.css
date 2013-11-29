@@ -2,7 +2,6 @@ body{
 	margin:0;
 	padding:0;
 	background-color:#dddddd;
-	
 }
 
 #parent{
@@ -21,6 +20,7 @@ body{
 	right:0;
 	left:0;
 	background-image: -moz-linear-gradient(center top , #3D3D3D 0%, #313131 52%, #1E1E1E 100%);
+	background-image: -webkit-linear-gradient(center top , #3D3D3D 0%, #313131 52%, #1E1E1E 100%);
 	z-index:10;
 }
 
@@ -139,7 +139,7 @@ body{
 	height: 200px;
 	background-color:#444;
 	position:fixed;
-	margin-top:45px;
+	margin-top:5px;
 	border: solid 1px #222;
 	margin-left:250px;
 	border-radius:5px;	
@@ -150,7 +150,6 @@ body{
 	box-shadow: 1px 1px 1px #888888;
 	display:none;
 	z-index:10;
-	
 }
 
 .subMenuArrowUp{

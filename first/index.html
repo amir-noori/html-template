@@ -37,10 +37,15 @@
         	}
 
         }
+    
+    
     </script>
 </head> 
 
-<body> 
+
+
+
+<body>
 <div id="parent">    
     <div id="header">
         <div id="headerMenuContainer">
@@ -57,7 +62,7 @@
             <div class="headerMenuArrowDown">
             </div>
         </div>
-        <div class="headerMenu">
+        <div class="headerMenu" id="forums">
             Forums
             <div class="headerMenuArrowDown">
             </div>
@@ -79,13 +84,12 @@
             <input id="searchSiteBtn" type="button" />
         </div>
         
-            
-    </div>
-    
+        
         <div class="subMenu" id="technicalSupportSubMenu">
             <div class="subMenuArrowUp">
             </div>
         </div>
+    
         <div class="subMenu" id="downloadsSubMenu" style="margin-left:400px;">
             <div class="subMenuArrowUp">
             </div>
@@ -94,7 +98,20 @@
             <p style="margin-left:40px;">Second</p>
             <p style="margin-left:40px;">First</p>
             <p style="margin-left:40px;">Second</p>
-        </div>  
+        </div>
+        
+        <div class="subMenu" id="forumsSubMenu" style="margin-left:500px;">
+            <div class="subMenuArrowUp">
+            </div>
+            <br>
+            <p style="margin-left:40px;">First</p>
+            <p style="margin-left:40px;">Second</p>
+            <p style="margin-left:40px;">First</p>
+            <p style="margin-left:40px;">Second</p>
+        </div>
+            
+    </div>
+      
     
     
     
@@ -106,8 +123,8 @@
                 </div><br />   
                 <table>
                     <tbody>
-                        <tr><td><input class="generalInput" type="text" value="Mail" /></td></tr>
-                        <tr><td><input class="generalInput" type="password" value="Password" /></td></tr>
+                        <tr><td><input class="generalInput" type="text" value="Mail" onfocus="javascript:if(this.value==this.defaultValue){this.value='';}" onblur="javascript:if(this.value==''){this.value=this.defaultValue;}"/></td></tr>
+                        <tr><td><input class="generalInput" type="password" value="Password" onfocus="javascript:if(this.value==this.defaultValue){this.value='';}" onblur="javascript:if(this.value==''){this.value=this.defaultValue;}"/></td></tr>
                         <tr><td><input class="generalBtn" type="submit" value="submit" /></td></tr>
                     </tbody>    
                 </table>    
@@ -124,6 +141,21 @@
     </div>  
 </div>          
 </body> 
+<script>
+    var browsers = ['Firefox' , 'Safari'];
+    var browser = 'unknown';
+    for(var i = 0 ; i < browsers.length ; i++)
+    {
+    	if(window.navigator.userAgent.indexOf(browsers[i]) != -1)
+    		browser = browsers[i];
+    }
+    var head = document.getElementsByTagName("head");
+	var css = document.createElement("link");
+	css.setAttribute('href' , './' + browser.toLowerCase() + '.css');
+	css.setAttribute('rel' , 'stylesheet');
+	(head[0]).appendChild(css);
+
+</script>
 <script type="text/javascript" src="./index.js"></script>                  
 
 </html>
