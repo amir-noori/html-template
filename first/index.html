@@ -1,0 +1,129 @@
+<html> 
+
+<head> 
+    
+    <link rel="stylesheet" href="./index.css">
+    <script>
+        function strech(i , element)
+        {        	
+        	setTimeout(function(){
+    	        element.style.width = (150 + i*200) + 'px';
+    	    } , i*1000);
+        }
+        function compress(i , element)
+        {        	
+        	setTimeout(function(){
+    	        element.style.width = (300 - i*150) + 'px';
+    	    } , i*1000);
+        }
+
+        function strechInput(id , which)
+        {
+        	var i;
+        	var element = document.getElementById(id);
+        	if(which == 's')
+        	{
+        	   	for(i = 0.01 ; i < 1 ; i += 0.01)
+            	{
+            	    strech(i , element);
+            	} 
+        	}
+        	if(which == 'c')
+        	{
+        	    for(i = 0.01 ; i < 1 ; i += 0.01)
+            	{
+            	    compress(i , element);
+            	} 
+        	}
+
+        }
+    </script>
+</head> 
+
+<body> 
+<div id="parent">    
+    <div id="header">
+        <div id="headerMenuContainer">
+        <div class="headerMenu">
+            Home
+        </div>
+        <div class="headerMenu" id="technicalSupport">
+            Technical Support
+            <div class="headerMenuArrowDown">
+            </div>
+        </div>
+        <div class="headerMenu" id="downloads">
+            Downloads
+            <div class="headerMenuArrowDown">
+            </div>
+        </div>
+        <div class="headerMenu">
+            Forums
+            <div class="headerMenuArrowDown">
+            </div>
+        </div>
+        <div class="headerMenu">
+            Contact Us
+            <div class="headerMenuArrowDown">
+            </div>
+        </div>
+        <div class="headerMenu">
+            About
+            <div class="headerMenuArrowDown">
+            </div>
+        </div>
+        </div>
+        
+        <div id="searchSite">
+            <input id="searchSiteInput" type="text" value="Search ..." onBlur="javascript:if(this.value==''){this.value=this.defaultValue; strechInput(this.id , 'c');}" onFocus="javascript:if(this.value==this.defaultValue){this.value=''; strechInput(this.id , 's');}" />
+            <input id="searchSiteBtn" type="button" />
+        </div>
+        
+            
+    </div>
+    
+        <div class="subMenu" id="technicalSupportSubMenu">
+            <div class="subMenuArrowUp">
+            </div>
+        </div>
+        <div class="subMenu" id="downloadsSubMenu" style="margin-left:400px;">
+            <div class="subMenuArrowUp">
+            </div>
+            <br>
+            <p style="margin-left:40px;">First</p>
+            <p style="margin-left:40px;">Second</p>
+            <p style="margin-left:40px;">First</p>
+            <p style="margin-left:40px;">Second</p>
+        </div>  
+    
+    
+    
+    <div id="main">
+        <div id="leftSide">
+            <div id="loginDiv">
+                <div class="leftDivHeader">
+                    Log In
+                </div><br />   
+                <table>
+                    <tbody>
+                        <tr><td><input class="generalInput" type="text" value="Mail" /></td></tr>
+                        <tr><td><input class="generalInput" type="password" value="Password" /></td></tr>
+                        <tr><td><input class="generalBtn" type="submit" value="submit" /></td></tr>
+                    </tbody>    
+                </table>    
+            </div>
+        </div>
+        <br >
+        <div class="mainChild">
+
+        </div>
+
+    </div>
+    
+    <div id="footer">
+    </div>  
+</div>          
+</body> 
+<script type="text/javascript" src="./index.js"></script>                  
+
+</html>
