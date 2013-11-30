@@ -1,0 +1,153 @@
+<html> 
+
+<head>   
+    <link rel="stylesheet" href="./index.css">
+</head> 
+
+<body> 
+
+       <div id="header">
+            <div id="headerTopMenu">
+                <div id="searchSite">
+                    <input id="searchSiteInput" type="text" value="Search ..." onBlur="javascript:if(this.value==''){this.value=this.defaultValue; strechInput(this.id , 'c');}" onFocus="javascript:if(this.value==this.defaultValue){this.value=''; strechInput(this.id , 's');}" />
+                    <input id="searchSiteBtn" type="button" />
+                </div>
+            </div>
+            <div id="headerSubMenu">
+            </div>
+        </div>      
+       
+        <div class="accordionContainer">
+                <div class="accordionTabContainer">
+                    <div class="accordionTabHead">
+                        First
+                    </div>
+                    <div class="accordionTabContent">
+                        <div>
+                            <div class="accordionTabsubMenu"><p style="margin:0">First</p></div>
+                            <div class="accordionTabsubMenu"><p style="margin:0">Second</p></div>
+                            <div class="accordionTabsubMenu"><p style="margin:0">Another Menu</p></div>
+                            <div class="accordionTabsubMenu"><p style="margin:0">Just one more...</p></div>
+                        </div>
+                     </div>
+                </div>
+                <div class="accordionTabContainer">
+                     <div class="accordionTabHead">
+                         Socond
+                     </div>
+                     <div class="accordionTabContent">
+                         <div class="accordionTabsubMenu"><p style="margin:0">First</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">Second</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">Another Menu</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">Just one more...</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">First</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">Second</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">Another Menu</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">Just one more...</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">First</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">Second</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">Another Menu</p></div>
+                         <div class="accordionTabsubMenu"><p style="margin:0">Just one more...</p></div>
+                     </div>
+                 </div>
+                 <div class="accordionTabContainer">
+                      <div class="accordionTabHead">
+                          Another One
+                      </div>
+                      <div class="accordionTabContent">
+                          <h1>I am Amir Noori</h1>
+                          <p>Nice to meet you...</p>
+                      </div>
+                  </div>
+                  <div class="accordionTabContainer">
+                         <div class="accordionTabHead">
+                             Some tab here too
+                         </div>
+                         <div class="accordionTabContent">
+                             <div class="accordionTabsubMenu"><p style="margin:0">First</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Second</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Another Menu</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Just one more...</p></div>
+                         </div>
+                   </div>
+                   <div class="accordionTabContainer">
+                            <div class="accordionTabHead">
+                                hey there
+                            </div>
+                            <div class="accordionTabContent">
+                                <h1>I am Amir Noori</h1>
+                                <p>Nice to meet you...</p>
+                            </div>
+                   </div>  
+            </div>
+
+        <div id="main">
+            <div style="margin-left:40px">
+                <br>
+                <br><br>
+                <div class="tabsParentWrapper">
+                    <div class="tabsParent">
+                        <div class="tabsMenu">
+                            <ul class="tabs">
+                                <li class="tab , chosenTab" id="tab1">
+                                    First
+                                </li>
+                                <li class="tab"  style="margin-left:71px;" id="tab2">
+                                    Second
+                                </li>
+                                <li class="tab"  style="margin-left:142px;" id="tab3">
+                                    Third
+                                </li>
+                                <li class="tab"  style="margin-left:214px;" id="tab4">
+                                    Fourth
+                                </li> 
+                            </ul>    
+                        </div>
+                        <div class="tabContent">
+                            <div class="contentArea , contentAreaChosen" id="tabContentArea1">
+                                <h3>Your Information</h3>
+                                <table style="color:silver;font-size:14px;">
+                                    <tbody>
+                                        <tr><td>First Name:</td><td><input class="contentInput" type="text"></td></tr>
+                                        <tr><td>Last Name:</td><td><input class="contentInput" type="text"></td></tr>
+                                        <tr><td>Phone NO:</td><td><input class="contentInput" type="text"></td></tr>
+                                        <tr><td><input class="contentBtn" type="submit" value="Sign In"></td></tr>    
+                                    </tbody>    
+                                </table> 
+                            </div>  
+                            <div class="contentArea" id="tabContentArea2">
+                                <h3>Tab 2</h3>
+
+                            </div>
+                            <div class="contentArea" id="tabContentArea3">
+                                <h3>Tab 3</h3>
+
+                            </div>
+                            <div class="contentArea" id="tabContentArea4">
+                                <h3>Tab 4</h3>
+
+                            </div>
+                        </div>        
+                    </div>    
+                </div>
+                
+                <br><br><br><br>
+                
+                <p style="margin-left:40px">
+                    This is just a small template
+                </p>  
+                <br><br><br><br>
+            </div>            
+        </div>
+         
+
+          <div id="footer">
+          </div>
+
+        
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>	
+<script type="text/javascript" src="./index.js"></script>                  
+
+</html>
