@@ -68,5 +68,27 @@ function init()
 		(tabs[i]).onclick = tabClicked;
 	}
 	$('.contentAreaChosen').css('display' , 'block');
+	
+	$('.headerSubSubMenu').mouseleave(function(){
+		$(this).fadeOut();
+	});
+	
+	var headerSubMenuList = $('.headerSubMenuList');
+	headerSubMenuList.mouseover(function(e){
+		var subSubMenu = '#' + 'headerSubSubMenu_' + e.target.id.substr(14 , e.target.id.length);
+		$(subSubMenu).fadeIn();
+	});
+	headerSubMenuList.mouseleave(function(e){
+		var subSubMenu = $('#' + 'headerSubSubMenu_' + e.target.id.substr(14 , e.target.id.length));
+		var overSubSubMenu = false;
+		subSubMenu.mouseover(function(){
+			overSubSubMenu = true;
+		});
+		setTimeout(function(){
+			if(!overSubSubMenu)
+				subSubMenu.fadeOut();
+		}, 300);
+		
+	});
 }
 document.onload = init();

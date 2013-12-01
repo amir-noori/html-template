@@ -21,8 +21,12 @@
         {
         	var i;
         	var element = document.getElementById(id);
+        	
         	if(which == 's')
         	{
+        	    element.style.opacity = '1';
+        	    element.style.boxShadow = '0px 0px 10px white';
+            	
         	   	for(i = 0.01 ; i < 1 ; i += 0.01)
             	{
             	    strech(i , element);
@@ -30,6 +34,9 @@
         	}
         	if(which == 'c')
         	{
+        	    element.style.opacity = '0.8';
+        	    element.style.boxShadow = '0px 0px 0px white';
+        	    
         	    for(i = 0.01 ; i < 1 ; i += 0.01)
             	{
             	    compress(i , element);
@@ -88,7 +95,7 @@
         <div class="subMenu" id="technicalSupportSubMenu">
             <div class="subMenuArrowUp">
             </div>
-        </div>
+        </div>  
     
         <div class="subMenu" id="downloadsSubMenu" style="margin-left:400px;">
             <div class="subMenuArrowUp">

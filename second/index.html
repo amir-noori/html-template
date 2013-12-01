@@ -7,14 +7,58 @@
 <body> 
 
        <div id="header">
-            <div id="headerTopMenu">
+            <div id="headerTopMenu" >
+                <table>
+                <tbody>
+                <tr>
+                <td>      
+                <ul class="horizontalMenu" style="margin-left:50px">
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        Technical Support
+                    </li>
+                    <li>
+                        ee.amir.noori
+                    </li>   
+                </ul>
+                </td>
+                </tr>
+                <tr>
+                <td>
                 <div id="searchSite">
                     <input id="searchSiteInput" type="text" value="Search ..." onBlur="javascript:if(this.value==''){this.value=this.defaultValue; strechInput(this.id , 'c');}" onFocus="javascript:if(this.value==this.defaultValue){this.value=''; strechInput(this.id , 's');}" />
                     <input id="searchSiteBtn" type="button" />
                 </div>
+                </td>
+                </tr>
+                </tbody>
+                </table>
             </div>
             <div id="headerSubMenu">
+                <ul class="horizontalMenu" style="margin-left:80px">
+                    <li class="headerSubMenuList" id="headerSubMenu_1">
+                        First
+                    </li>
+                    <li class="headerSubMenuList" id="headerSubMenu_2">
+                        Second
+                    </li>
+                    <li class="headerSubMenuList" id="headerSubMenu_3">
+                        Third
+                    </li>   
+                </ul>
             </div>
+            <div class="headerSubSubMenu" id="headerSubSubMenu_1">
+   
+            </div>
+            <div class="headerSubSubMenu" id="headerSubSubMenu_2">
+   
+            </div>
+            <div class="headerSubSubMenu" id="headerSubSubMenu_3">
+   
+            </div>
+            
         </div>      
        
         <div class="accordionContainer">
