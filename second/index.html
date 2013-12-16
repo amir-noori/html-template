@@ -1,11 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
 <html> 
 
-<head>   
+<head>
     <link rel="stylesheet" href="./index.css">
+    <!--[if IE]>
+        <link rel="stylesheet" href="./ie.css">
+    <![ENDIF]-->
 </head> 
 
 <body> 
+    
+<div id="topFormContainer">
+    <div class="topFormParent">
+        <div class="topFormMenu">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="topFormTabs">
+                            <ul class="topFormTabsList">
+                                <li class="topFormTabsListItem">
+                                    First
+                                </li>
+                                <li class="topFormTabsListItem">
+                                    Second
+                                </li>
+                                <li class="topFormTabsListItem">
+                                    Third
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="topFormClose">
+                            <img src="./cancel.png">
+                        </td>            
+                    </tr>    
+                </tbody>    
+            </table>    
+        </div>    
+        <div class="topForm">
+            <div>
+                <br>
+                <div class="topFormMessageContainer">
+                    <div class="topFormMessageWrapper">
+                    <div class="topSideMessage , topSideMessageSuccess">
+                        <table>
+                            </tbody>
+                            <tr>
+                            <td>
+                                <img src="./success.png">
+                            </td>
+                            <td>
+                                <div class="topSideMessageContent">
+                                    This message is an SUCCESS message so you will notice that you have an error... <br>
+                                    so you will do as the instructions tell you and everything gona be  all right. <br>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="topMessageClose">
+                                    <img src="./cancel.png">
+                                </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                         </table>
+                    </div>
+                </div>
+                    <div class="topFormMessageWrapper">
+                    <div class="topSideMessage , topSideMessageWarning">
+                        <table>
+                            </tbody>
+                            <tr>
+                            <td>
+                                <img src="./alert.png">
+                            </td>
+                            <td>
+                                <div class="topSideMessageContent">
+                                    This message is an WARNING message so you will notice that you have an error... <br>
+                                    so you will do as the instructions tell you and everything gona be  all right. <br>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="topMessageClose">
+                                    <img src="./cancel.png">
+                                </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                         </table>
+                    </div>
+                </div>
+                    <div class="topFormMessageWrapper">
+                    <div class="topSideMessage , topSideMessageError">
+                        <table>
+                            </tbody>
+                            <tr>
+                            <td>
+                                <img src="./error.png">
+                            </td>
+                            <td>
+                                <div class="topSideMessageContent">
+                                    This message is an ERROR message so you will notice that you have an error... <br>
+                                    so you will do as the instructions tell you and everything gona be  all right. <br>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="topMessageClose">
+                                    <img src="./cancel.png">
+                                </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                         </table>      
+                    </div>
+                    
+                </div>
+                </div>
+                
+                <div class="topFormChild">
+                <p>
+                    <br><br><br>
+                    REM Here I set some default column widths for commonly queried <br>
+                    REM columns - columns I find myself setting frequently, day after day <br>
+                    column object_name format a30 <br>
+                    column segment_name format a30 <br>
+                    column file_name format a40 <br>
+                    column name format a30 <br>
+                    column file_name format a30 <br>
+                    column what format a30 word_wrapped <br>
+                    column plan_plus_exp format a100 <br>
+                    REM by default, a spool file is a fixed width file with lots of <br>
+                    REM trailing blanks.  Trimspool removes these trailing blanks <br>
+                    REM making the spool file significantly smaller <br>
+                    set trimspool on <br>
+                    REM LONG controls how much of a LONG or CLOB sqlplus displays <br>
+                    REM by default.  It defaults to 80 characters which in general <br>
+                    REM is far too small.  I use the first 5000 characters by default<br> 
+                    set long 5000 <br>
+                    REM This sets the default width at which sqlplus wraps output. <br>
+                    REM I use a telnet client that can go up to 131 characters wide - <br>
+                    REM hence this is my preferred setting. <br>
+                    set linesize 131<br><br><br><br>
+                </p> 
+                </div>
+  
+            </div>
+            <br>
+        </div>
 
+    </div>        
+</div>   
+   
+<div id="parentContainer">
        <div id="header">
             <div id="headerTopMenu" >
                 <table>
@@ -33,6 +179,39 @@
                 </div>
                 </td>
                 </tr>
+                <tr>
+                <td>
+                <div id="topRightMenu">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td>
+                    <div class="topRightIcon , ballonIcon">
+                        <img src="./user.png" class="topRightIconImg" id="userTopRightIcon">
+                    </div>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>    
+                    <td>
+                    <div class="topRightIcon , userIcon">
+                        <img src="./balloon.png" class="topRightIconImg" id="balloonTopRightIcon">
+                    </div>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                    <div class="topRightIcon , settingIcon">
+                        <img src="./settings.png" class="topRightIconImg" id="settingTopRightIcon">
+                    </div>
+                    </td>
+                    </tr>
+                    </tbody>
+                    </table> 
+                </div>
+                </td>
+                </tr>
                 </tbody>
                 </table>
             </div>
@@ -50,16 +229,186 @@
                 </ul>
             </div>
             <div class="headerSubSubMenu" id="headerSubSubMenu_1">
-   
+                 <div class="headerSubSubMenuArrowUp" style="margin-left:115px;border-left: 9px solid transparent;border-right: 9px solid transparent;border-bottom: 9px solid #507A80;"></div>
+                 <ul class="horizontalMenu" style="margin-left:80px">
+                        <li>
+                            First
+                        </li>
+                        <li>
+                            Second
+                        </li>
+                        <li>
+                            Third
+                        </li>
+                        <li>
+                            First
+                        </li>
+                        <li>
+                            Second
+                        </li>
+                        <li>
+                            Third
+                        </li>
+                        <li>
+                            First
+                        </li>
+                        <li>
+                            Second
+                        </li>
+                        <li>
+                            Third
+                        </li>
+                        
+                 </ul>
             </div>
             <div class="headerSubSubMenu" id="headerSubSubMenu_2">
-   
+                <div class="headerSubSubMenuArrowUp" style="margin-left:190px;border-left: 9px solid transparent;border-right: 9px solid transparent;border-bottom: 9px solid #507A80;"></div>
+                
+                <ul class="horizontalMenu" style="margin-left:80px">
+                       <li>
+                           First
+                       </li>
+                       <li>
+                           Second
+                       </li>
+                       <li>
+                           Third
+                       </li>
+                       <li>
+                           First
+                       </li>
+                       
+                </ul>
             </div>
             <div class="headerSubSubMenu" id="headerSubSubMenu_3">
-   
+                <div class="headerSubSubMenuArrowUp" style="margin-left:265px;border-left: 9px solid transparent;border-right: 9px solid transparent;border-bottom: 9px solid #A7AD6A;"></div>
+                
+                <ul class="horizontalMenu" style="margin-left:80px">
+                       <li>
+                           First
+                       </li>
+                       <li>
+                           Second
+                       </li>
+                       <li>
+                           Third
+                       </li>
+                       <li>
+                           First
+                       </li>
+                       <li>
+                           Second
+                       </li>
+                       <li>
+                           Third
+                       </li>
+                       
+                </ul>
             </div>
             
-        </div>      
+            <br>
+            <div>
+                
+                <div class="topSideMessageWrapper , firstTopSideMessageWrapper">
+                    <div class="topSideMessage , topSideMessageSuccess">
+                        <table>
+                            </tbody>
+                            <tr>
+                            <td>
+                                <img src="./success.png">
+                            </td>
+                            <td>
+                                <div class="topSideMessageContent">
+                                    This message is an SUCCESS message so you will notice that you have an error... <br>
+                                    so you will do as the instructions tell you and everything gona be  all right. <br>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="topMessageClose">
+                                    <img src="./cancel.png">
+                                </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                         </table>
+                    </div>
+                </div>
+                <div class="topSideMessageWrapper , secondTopSideMessageWrapper">
+                    <div class="topSideMessage , topSideMessageWarning">
+                        <table>
+                            </tbody>
+                            <tr>
+                            <td>
+                                <img src="./alert.png">
+                            </td>
+                            <td>
+                                <div class="topSideMessageContent">
+                                    This message is an WARNING message so you will notice that you have an error... <br>
+                                    so you will do as the instructions tell you and everything gona be  all right. <br>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="topMessageClose">
+                                    <img src="./cancel.png">
+                                </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                         </table>
+                    </div>
+                </div>
+                <div class="topSideMessageWrapper , secondTopSideMessageWrapper">
+                    <div class="topSideMessage , topSideMessageError">
+                        <table>
+                            </tbody>
+                            <tr>
+                            <td>
+                                <img src="./error.png">
+                            </td>
+                            <td>
+                                <div class="topSideMessageContent">
+                                    This message is an ERROR message so you will notice that you have an error... <br>
+                                    so you will do as the instructions tell you and everything gona be  all right. <br>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="topMessageClose">
+                                    <img src="./cancel.png">
+                                </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                         </table>      
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <br>
+            
+       </div>      
+       
+       <div id="topRightMenuData">
+           <div class="topRightMenuDataBox" id="userTopRightIconData" style="margin-top:-112px;margin-left:1000px;">
+               <div class="topRightMenuDataArrowUp" style="margin-left:212px;">
+
+               </div>
+
+           </div>
+           <div class="topRightMenuDataBox" id="balloonTopRightIconData" style="margin-top:-112px;margin-left:1030px;">
+               <div class="topRightMenuDataArrowUp" style="margin-left:228px;">
+
+               </div>
+               ballon
+           </div>
+           <div class="topRightMenuDataBox" id="settingTopRightIconData" style="margin-top:-112px;margin-left:1070px;">
+               <div class="topRightMenuDataArrowUp" style="margin-left:236px;">
+
+               </div>
+               setting
+           </div>
+       </div>       
        
         <div class="accordionContainer">
                 <div class="accordionTabContainer">
@@ -112,6 +461,18 @@
                              <div class="accordionTabsubMenu"><p style="margin:0">Second</p></div>
                              <div class="accordionTabsubMenu"><p style="margin:0">Another Menu</p></div>
                              <div class="accordionTabsubMenu"><p style="margin:0">Just one more...</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">First</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Second</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Another Menu</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Just one more...</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">First</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Second</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Another Menu</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Just one more...</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">First</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Second</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Another Menu</p></div>
+                             <div class="accordionTabsubMenu"><p style="margin:0">Just one more...</p></div>
                          </div>
                    </div>
                    <div class="accordionTabContainer">
@@ -125,8 +486,313 @@
                    </div>  
             </div>
 
+        
+
         <div id="main">
-            <div style="margin-left:40px">
+            
+            <br><br>
+            
+            <div class="mainChild">
+                <div class="accordionInfoTableContainer">
+                    <table class="accordionInfoTable">
+                        <tbody>
+                            <tr class="accordionInfoTableHead"><td class="accordionInfoTableExpand">+</td><td class="accordionInfoTableTitle">Summary</td></tr>
+                            <tr>
+                                <td class="accordionInfoTableContent">
+                                    There are different areas to consider when load-balancing, but all considerations 
+                                    begin with setting your performance and quality of service expectations. Usually, the 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+                <div class="accordionInfoTableContainer">
+                    <table class="accordionInfoTable">
+                        <tbody>
+                            <tr class="accordionInfoTableHead"><td class="accordionInfoTableExpand">+</td><td class="accordionInfoTableTitle">Main Content</td></tr>
+                            <tr>
+                                <td class="accordionInfoTableContent">
+                                    There are different areas to consider when load-balancing, but all considerations 
+                                    begin with setting your performance and quality of service expectations. Usually, the 
+                                    potential to be inﬁnitely scalable via incrementing resources requires major changes 
+                                    to the logical architecture, to make sure that components continue to work in an 
+                                    optimal way in the scaled environment. 
+                                    Once you have the right expectations in place, you’ll need to identify parts of your 
+                                    overall architecture where load-balancing is necessary to achieve the expected level 
+                                    of performance. First, take a look at your application’s clients and services. “Clients” 
+                                    refers to any possible consumers that logical groupings of servers within your ar- 
+                                    chitecture may have. These can be internal, e.g., a group of database servers serving 
+                                    web servers; or external, e.g., web servers which in turn serve browser requests. “Ser- 
+                                    vices”, on the other hand, refers to the services that the logical grouping of servers 
+                                    provide. The logical grouping of web servers, for example, responds to requests for 
+                                    service originating via the HTTP protocol. In Figure 4.1 that we showed earlier you 
+                                    can see a few of these groups: there’s a web group, a database group and a storageD 
+                                
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+                <div class="accordionInfoTableContainer">
+                    <table class="accordionInfoTable">
+                        <tbody>
+                            <tr class="accordionInfoTableHead"><td class="accordionInfoTableExpand">+</td><td class="accordionInfoTableTitle">Feedback Form</td></tr>
+                            <tr>
+                                <td class="accordionInfoTableContent">
+                                    <div>
+                                        <h2>Enter your information to sign in</h2>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    First Name:
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="generalInput">
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Last Name:
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="generalInput">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Email Address:
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="generalInput">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input style="width:auto" type="button" class="generalBtn" value="REGISTER" onclick="register()">
+                                                </td>
+                                            </tr>
+                                        </tbody>    
+                                    </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>   
+            </div>    
+            
+            <div class="mainChild">
+                <div class="contentForm">
+                    <div id="registerForm">
+                        <h2>Enter your information to sign in</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    First Name:
+                                </td>
+                                <td>
+                                    <input type="text" class="generalInput">
+                                </td>
+                                 
+                            </tr>
+                            <tr>
+                                <td>
+                                    Last Name:
+                                </td>
+                                <td>
+                                    <input type="text" class="generalInput">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Email Address:
+                                </td>
+                                <td>
+                                    <input type="text" class="generalInput">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Home Address:
+                                </td>
+                                <td>
+                                    <input type="text" class="generalInput">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Password:
+                                </td>
+                                <td>
+                                    <input type="password" class="generalInput">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Confirm Password:
+                                </td>
+                                <td>
+                                    <input type="password" class="generalInput">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input style="width:auto" type="button" class="generalBtn" value="REGISTER" onclick="register()">
+                                </td>
+                            </tr>
+                        </tbody>    
+                    </table>
+                    </div>    
+                </div>       
+            </div>
+            
+            <br><br>
+            <hr>
+            <br><br>
+            
+            <div class="mainChild">
+            
+                <div class="newForumTopicWrapper">
+                    <div class="newForumTopic">
+                        <span style="font-size:19px;margin-top:-40px;position:absolute">Create New Topic</span>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="newForumInputs">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" class="generalInput" value="Topic" onBlur="javascript:if(this.value==''){this.value=this.defaultValue; strechInput(this.id , 'c');}" onFocus="javascript:if(this.value==this.defaultValue){this.value=''; strechInput(this.id , 's');}"><br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <textarea class="generalInput" onBlur="javascript:if(this.value==''){this.value=this.defaultValue; strechInput(this.id , 'c');}" onFocus="javascript:if(this.value==this.defaultValue){this.value=''; strechInput(this.id , 's');}">Put topic contents in here...</textarea>
+                                                        </td>   
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <button class="generalBtn">CREATE</button>
+                                                        </td>
+                                                    </tr>    
+                                                </tbody>
+                                            </table>    
+                                        </div>
+                                    </td>
+                                    <td style="font-size:12px;margin-top:10px;width:250px;position:absolute">
+                                        <h2 style="font-size:22px">Before You Post</h2>
+                                        <p>If you are having a problem, try to include as<br>
+                                            much information as possible to help people<br>
+                                             help you, including:</p>
+                                        <ul>
+                                        <li>Your operating system</li>
+                                        <li>Your browser</li>
+                                        <li>What version of Ghost you have</li>
+                                        <li>What version of Node.js you have</li>
+                                        <li>Who your host is</li>
+                                        <li>Copy/paste any error messages which<br> you came across</li>
+                                        </ul>
+                                        <p>
+                                        This helps
+                                        <strong>a lot</strong>
+                                        ! Thank you :)
+                                        </p>
+                                    </td>       
+                                </tr>
+                            </tbody>
+                        </table>    
+                    </div>
+                </div>
+            
+            </div>    
+            
+            <br><br>
+            <hr>
+            <br><br>
+            
+            <div class="mainChild">
+                <div class="editInformationArea">
+                    <div class="editInformationAreaChild">
+                        <h2>Edit Profile</h2>
+
+                        <div class="editInfoHeader">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Profile Information</td>
+                                        <td></td>
+                                        <td class="editInfoBtn">EDIT</td>
+                                    </tr>
+                                </tbody>    
+                            </table>    
+                        </div>
+                        <div class="editInfoContent">
+                        </div>
+                    </div>
+                    <div class="editInformationAreaChild">
+                        <h2>Security Options</h2>
+
+                        <div class="editInfoHeader">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Edit Security</td>
+                                        <td></td>
+                                        <td class="editInfoBtn">EDIT</td>
+                                    </tr>
+                                </tbody>    
+                            </table>    
+                        </div>
+                        <div class="editInfoContent">
+                            <div class="editInfoContentButtons">
+                                <button class="generalBtn">Save</button>&nbsp;
+                                <button class="generalBtn">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    
+                </div>
+            </div> 
+            <br><br>
+            <hr>   
+            <br><br>
+            <br><br>
+            <div class="mainChild">
+            <div class="contentTableWrapper">
+                <div class="contentTable">
+                    <table>
+                        <tbody>
+                            <th>User Name</th><th>Email Address</th><th>Address</th><th>Full Name</th><th>Credit</th><th>Phone NO</th><th>Edit</th><th>Delete</th>
+                            <tr><td>amir_noori</td><td>ee.amir.noori@gmail.com</td><td>New York</td><td>Amir Noori</td><td>7500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>metal_1987</td><td>ee.amir.noori@gmail.com</td><td>New York</td><td>Amir Noori</td><td>7500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>amir_noori</td><td>ee.amir.noori@gmail.com</td><td>Jepan</td><td>Noori Amir</td><td>91500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>amir_noori</td><td>ee.amir.noori@gmail.com</td><td>New York</td><td>Amir Noori</td><td>7500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>guy_7</td><td>ee.amir.noori@gmail.com</td><td>Jepan</td><td>Noori Amir</td><td>91500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>amir</td><td>ee.amir.noori@gmail.com</td><td>New York</td><td>Amir Noori</td><td>7500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>user001</td><td>ee.amir.noori@gmail.com</td><td>Jepan</td><td>Noori Amir</td><td>91500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>metal_1987</td><td>ee.amir.noori@gmail.com</td><td>New York</td><td>Amir Noori</td><td>7500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>metal_1987</td><td>ee.amir.noori@gmail.com</td><td>Jepan</td><td>Noori Amir</td><td>91500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>amir.noori</td><td>ee.amir.noori@gmail.com</td><td>New York</td><td>Amir Noori</td><td>7500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>guy_0</td><td>ee.amir.noori@gmail.com</td><td>Jepan</td><td>Noori Amir</td><td>91500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>admin</td><td>ee.amir.noori@gmail.com</td><td>New York</td><td>Amir Noori</td><td>7500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>user123</td><td>ee.amir.noori@gmail.com</td><td>Jepan</td><td>Noori Amir</td><td>91500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>Amir Noori</td><td>ee.amir.noori@gmail.com</td><td>New York</td><td>Amir Noori</td><td>7500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                            <tr><td>testUser</td><td>ee.amir.noori@gmail.com</td><td>Jepan</td><td>Noori Amir</td><td>91500$</td><td>0123456789</td><td class="tableEditColumn">Edit</td><td class="tableDeleteColumn">X</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+            <br><hr>
+            
+            
+            <div class="mainChild">
                 <br>
                 <br><br>
                 <div class="tabsParentWrapper">
@@ -152,12 +818,15 @@
                                 <h3>Your Information</h3>
                                 <table style="color:silver;font-size:14px;">
                                     <tbody>
-                                        <tr><td>First Name:</td><td><input class="contentInput" type="text"></td></tr>
-                                        <tr><td>Last Name:</td><td><input class="contentInput" type="text"></td></tr>
-                                        <tr><td>Phone NO:</td><td><input class="contentInput" type="text"></td></tr>
-                                        <tr><td><input class="contentBtn" type="submit" value="Sign In"></td></tr>    
+                                        <tr><td><input class="generalInput" value="First Name" type="text"></td></tr>
+                                        <tr><td><input class="generalInput" value="Last Name" type="text"></td></tr>
+                                        <tr><td><input class="generalInput" value="Phone NO" type="text"></td></tr>
+                                        <tr><td><input class="generalBtn" type="submit" value="Sign In"></td></tr>    
                                     </tbody>    
-                                </table> 
+                                </table>   
+                                    
+                                </table>
+                                
                             </div>  
                             <div class="contentArea" id="tabContentArea2">
                                 <h3>Tab 2</h3>
@@ -178,16 +847,91 @@
                 <br><br><br><br>
                 
                 <p style="margin-left:40px">
-                    This is just a small template
+                    <h3>Some Text Here....</h3>
+                    Once you have the right expectations in place, you’ll need to identify parts of your <br>
+                    overall architecture where load-balancing is necessary to achieve the expected level  <br>
+                    of performance. First, take a look at your application’s clients and services. “Clients”  <br>
+                    refers to any possible consumers that logical groupings of servers within your ar-  <br>
+                    chitecture may have. These can be internal, e.g., a group of database servers serving  <br>
+                    web servers; or external, e.g., web servers which in turn serve browser requests. “Ser-  <br>
+                    vices”, on the other hand, refers to the services that the logical grouping of servers  <br>
+                    provide. The logical grouping of web servers, for example, responds to requests for  <br>
+                    service originating via the HTTP protocol. In Figure 4.1 that we showed earlier you  <br>
+                    can see a few of these groups: there’s a web group, a database group and a storage  <br>
+                    group.D 
                 </p>  
                 <br><br><br><br>
+                
+                <div style="background-color:#eee;width:330px;height:270px;box-shadow:0px 0px 5px #bbb;">
+                    <div style="width:200px;margin:auto;padding:20px;margin-right:125px;margin-bottom:50px;position:absolute">
+                        <h3>Log In Here</h3>
+                        <table style="color:inherit">
+                        <tbody>
+                            <tr><td><input class="generalInput" type="text" value="email" onfocus="javascript:if(this.value==this.defaultValue){this.value='';}" onblur="javascript:if(this.value==''){this.value=this.defaultValue;}"></td></tr>
+                            <tr><td></td></tr>
+                            <tr><td><input class="generalInput" type="password" value="password" onfocus="javascript:if(this.value==this.defaultValue){this.value='';}" onblur="javascript:if(this.value==''){this.value=this.defaultValue;}"></td></tr>
+                            <tr><td></td></tr>
+                            <tr><td></td></tr>
+                            <tr><td><button class="generalBtn">LOGIN</button></td></tr>
+                            <tr><td style="position:absolute;margin-left:120px;margin-top:-40px;font-size:12px;width:150px"><input type="checkbox">Keep me loged in</td></tr>
+                            
+                            <tr><td style="position:absolute;margin-left:125px;margin-top:-20px;font-size:12px;width:150px"><a href="#">forgot your password?</a></td></tr>
+                        </tbody>    
+                        </table>
+                    </div> 
+                </div>                
+                <br><br><br><br>
             </div>            
+        
+            <div class="mainChild" style="width:700px">
+                <hr style="width:700px">
+                <br><br>
+                <a class="generalLinkBtn , showOverLayFrom" href="#">Show Overlay Form</a>
+                <br><br><br>
+                <hr style="width:700px">
+            </div>
+        
         </div>
          
 
           <div id="footer">
+              <div id="footerLinks">
+              <table style="color:inherit">
+              <tbody>
+                  <tr><td><a href="#">HOME</a></td><td><a href="#">ABOUT</a></td><td><a href="#">CONTACT</a></td><td><a href="#">BLOG</a></td></tr>
+              </tbody>    
+              </table>
+              </div>
+              <div id="socialLinks">
+                  <table>
+                  <tbody>
+                      <tr>
+                        <td>
+                            <div class="socialLink">
+                                  <img style="width:29px;height:29px;" src="./facebook.png">
+                             </div>
+                        </td>
+                        <td>
+                            <div class="socialLink">
+                                  <img src="./twitter.png">
+                             </div>
+                        </td>
+                        <td>
+                            <div class="socialLink">
+                                  <img src="./google.png">
+                             </div>
+                        </td>
+                        <td>
+                            <div class="socialLink">
+                                  <img src="./linkedin.png">
+                             </div>
+                        </td>
+                      </tr>
+                  </tbody>
+                  </table> 
+              </div>
           </div>
-
+</div>
         
 </body>
 
