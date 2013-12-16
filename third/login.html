@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html> 
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    
+    <style>
+    
+    #loginContainer{
+        margin:auto;
+        width:400px;
+        height:340px;
+        box-shadow:0px 0px 10px #ccc;
+    }
+    
+    
+    #loginContainer table{
+           margin:auto;
+           width:400px;
+           margin-left:30px;
+           padding:20px;
+    }
+    
+    #loginContainer table tr td{
+           padding:7px;
+    }
+    
+    .generalInput{
+        text-align:center;
+        font-size:22px;
+    }
+    
+    .generalBtn{
+        margin:auto;
+        width:283px;
+        background-color:#158C4D;
+        background-image: -moz-linear-gradient(center top , #158C4D 0%, #19B562 100%);	
+    	background-image: -webkit-linear-gradient(center top , #158C4D 0%, #19B562 100%);
+    	background-image: -webkit-gradient(linear, left top, left bottom, from(#158C4D), to(#19B562));
+    	background-image: -o-linear-gradient(center top , #158C4D 0%, #19B562 100%);
+    	background-image: linear-gradient(center top , #158C4D 0%, #19B562 100%);
+    	font-size:20px;
+    	height:40px;
+    }
+    
+    .generalBtn:hover{
+        background-color:#148B91;
+        background-image: -moz-linear-gradient(center top , #148B91 0%, #19ADB5 100%);	
+    	background-image: -webkit-linear-gradient(center top , #148B91 0%, #19ADB5 100%);
+    	background-image: -webkit-gradient(linear, left top, left bottom, from(#148B91), to(#19ADB5));
+    	background-image: -o-linear-gradient(center top , #148B91 0%, #19ADB5 100%);
+    	background-image: linear-gradient(center top , #148B91 0%, #19ADB5 100%);
+    }
+    
+    #main{
+        min-height:430px;
+    }
+    
+    </style>
+    
+</head> 
+
+<body> 
+
+<div id="header">
+    <ul class="headerMenus">
+        <li class="headerMenuItem">
+            <a href="./index.html">Home</a>
+        </li>
+        <li class="headerMenuItem">
+            Technical Support
+            <ul>
+                <li>
+                    first
+                </li>
+                <li>
+                    second
+                </li>
+                <li>
+                    third
+                </li> 
+            </ul>
+        </li>
+        <li class="headerMenuItem">
+            Forum
+            <ul>
+                <li>
+                    first
+                </li>
+                <li>
+                    second
+                </li>
+                <li>
+                    third
+                </li> 
+            </ul>
+        </li>
+        <li class="headerMenuItem">
+            About
+        </li>
+        <li class="headerMenuItem">
+            Contact
+        </li>
+        <li class="headerMenuItem">
+            Login
+        </li> 
+    </ul>    
+</div>
+
+<div id="main">
+    
+    <br>
+    
+    
+    <div class="mainChild" style="border:none;box-shadow:none">
+        <div id="loginContainer">
+            <table>
+            <tbody>
+                <tr><td><h2>Log In Here:</h2></td></tr>
+                <tr><td><input type="text" class="generalInput" value="E-Mail" onfocus="javascript:if(this.value==this.defaultValue){this.value='';}" onblur="javascript:if(this.value==''){this.value=this.defaultValue;}"></td></tr>
+                <tr><td><input type="text" class="generalInput" value="Password" onfocus="javascript:if(this.value==this.defaultValue){this.value='';this.setAttribute('type' , 'password')}" onblur="javascript:if(this.value==''){this.value=this.defaultValue;this.setAttribute('type' , 'text')}"></td></tr>
+                <tr><td><input type="submit" class="generalBtn" value="LOGIN"></td></tr>
+            </tbody>    
+            </table>    
+        </div>
+        <br>  
+    </div>
+      
+</div>
+
+
+<div id="footer">
+</div>
+
+  
+        
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>	
+
+<script type="text/javascript" src="./index.js"></script>                  
+
+</html>
